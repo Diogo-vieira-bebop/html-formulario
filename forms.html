@@ -1,0 +1,88 @@
+<DOCTYPE html>
+ <html>
+ <head>
+
+  <meta charset = "UTF-8">
+  
+  
+
+  <title>Formulário</title>
+  <style> 
+#titulo{
+	
+	text-align:center;
+	border: 5px solid #1e6370;
+	padding: 30px;
+		
+}
+
+  </style> 
+
+ </head>
+ <body style="background-color:#a1e3c5";>
+
+<h1 id="titulo"> Formulario do DasRave </h1>
+
+  <form action="processar.php" method="post">
+<fieldset>
+<legend> INSIRA SEUS DADOS </legend>
+	<!-- Nome completo -->
+	<label for="nome">Nome completo:</label><br> 	
+	<input type="text" id="nome" name="nome" required placeholder="Seu Nome Completo" ><br><br>
+
+	<!-- E-mail -->
+	<label for="email">E-mail:</label><br> 	
+	<input type="email" id="email" name="email" required placeholder="email@gmail.com"><br><br>
+
+	<!-- Data de nascimento -->
+	<label for="date">Data de nascimento:</label><br> 	
+	<input type="date" id="date" name="date" ><br><br>
+
+ 	<!-- Senha -->
+	<label for="senha">Senha:</label><br> 	
+	<input type="password" id="senha" name="senha" minlenght="8" required placeholder="sua senha"><br><br>
+	
+	<!-- telefone -->
+	<label for="telofone">Telefone:</label><br> 	
+	<input type="tel" id="telefone" name="telefone" maxlenght="11" required placeholder="(xx)xxxx-xxxx"><br><br>
+	
+	<!-- Pais -->
+	<label for="pais">pais:</label><br> 	
+	<select name='paises'><br>
+		<option>Brazil</option><br>
+		<option>França</option><br>
+		<option>Russia</opntion><br>
+		<option>Estados Unidos</opntion><br>
+		<option>Russia</opntion><br>
+		<option>Japão</opntion><br>
+		<option>China</opntion><br>
+		<option>Alemanha</opntion><br>
+	</select>
+
+ <h3> seleção de genero </h3> 
+	
+	<label for="masculino">masculino</label><br>
+	<input type="radio" id="masculino" name="masculino" value="masculino" requerid><br>
+
+	<label for="feminino">Feminino</label><br>
+	<input type="radio" id="feminino" name="feminino" value="feminino"><br>
+	
+	<label for="outro">tu é🏳️‍🌈 ?</label><br>
+	<input type="radio" id="outro" name="outro" value="outro"><br>
+	
+
+ <p>Você concorda com os termos e condições do site?</p>	
+	
+	<label for = "Termos">Sim</label>
+	<input type="checkbox" id="termos" name="termos" value="termos"><br>
+
+	<br><label for ="comentario">Deseja inserir alguma comentario a mais?</label><br>
+	<textarea id="comentario" name="comentario" rows="10" cols="50" maxlenght="300" required placeholder="Digite sua mensagem(máximo 300 caracteres)..."></textarea><br><br>
+	
+	<input type="submit"><br><br>
+
+	<input type="reset">
+
+ </body>
+
+ </html>
